@@ -1,24 +1,26 @@
-# [devktech.in](https://www.devktech.in)
+# devKtech
 
 <p align="center">
   <img src="assets/logo.png" width="180" height="180">
 </p>
 
-### This repository contains resources of [devktech.in](https://www.devktech.in)
+devKtech.in is a personal platform where I share technical content and articles/solutions. I strive to provide useful and relevant information based on my experience and research. Please note that the content may not always be perfect or 100% accurate, here I am trying to document my knowledge in such a way that it helps other people. Technology is ever-evolving, and I am continuously learning along the way. Use the resources here as a guide, but I encourage you to explore further and verify details independently for your specific needs.
+
+This repository contains all resources presented in [devktech.in](https://www.devktech.in)
 
 ## Frontend Machine Coding
 
-- ### [Accordion](https://devktech.in/frontend-machine-coding/accordion)
-- ### [File Explorer](https://devktech.in/frontend-machine-coding/file-explorer)
-- ### [Infinite Scroll](https://devktech.in/frontend-machine-coding/infinite-scroll)
-- ### [Modal](https://devktech.in/frontend-machine-coding/modal)
-- ### [Otp](https://devktech.in/frontend-machine-coding/otp-login)
-- ### [Password Generator](https://devktech.in/frontend-machine-coding/password-generator)
-- ### [Progress Bar](https://devktech.in/frontend-machine-coding/progress-bar)
-- ### [Star Rating](https://devktech.in/frontend-machine-coding/star-rating)
-- ### [Stop Watch](https://devktech.in/frontend-machine-coding/stop-watch)
-- ### [Tab Layout](https://devktech.in/frontend-machine-coding/tab-layout)
-- ### [Traffic Light](https://devktech.in/frontend-machine-coding/traffic-light)
-
+- [Accordion](https://devktech.in/frontend-machine-coding/accordion)
+- [Draggable Todo](https://devktech.in/frontend-machine-coding/draggable-todo)
+- [File Explorer](https://devktech.in/frontend-machine-coding/file-explorer)
+- [Infinite Scroll](https://devktech.in/frontend-machine-coding/infinite-scroll)
+- [Modal](https://devktech.in/frontend-machine-coding/modal)
+- [Otp](https://devktech.in/frontend-machine-coding/otp-login)
+- [Password Generator](https://devktech.in/frontend-machine-coding/password-generator)
+- [Progress Bar](https://devktech.in/frontend-machine-coding/progress-bar)
+- [Star Rating](https://devktech.in/frontend-machine-coding/star-rating)
+- [Stop Watch](https://devktech.in/frontend-machine-coding/stop-watch)
+- [Tab Layout](https://devktech.in/frontend-machine-coding/tab-layout)
+- [Traffic Light](https://devktech.in/frontend-machine-coding/traffic-light)
 
 #### ----- More content will be added -----
