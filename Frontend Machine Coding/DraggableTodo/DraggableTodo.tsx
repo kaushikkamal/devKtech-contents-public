@@ -21,7 +21,7 @@ const initialPendingTodo: ITodo[] = [
     { id: '2', text: 'Make Food' },
 ];
 
-const initialWorkingTodo: ITodo[] = [
+const initialInProgressTodo: ITodo[] = [
     { id: '12', text: 'Study' },
     { id: '22', text: 'Need tp Upskill' },
 ];
@@ -33,7 +33,7 @@ const DraggableTodo = () => {
     const [pendingTasks, setPendingTasks] =
         useState<ITodo[]>(initialPendingTodo);
     const [inProgressTasks, setInProgressTasks] =
-        useState<ITodo[]>(initialWorkingTodo);
+        useState<ITodo[]>(initialInProgressTodo);
     const [completedTasks, setCompletedTasks] =
         useState<ITodo[]>(initialCompletedTodo);
 
@@ -55,7 +55,7 @@ const DraggableTodo = () => {
     };
 
     const handleOnDragStart = (whichContainer: string, index: number) => {
-        setDragCaptureClass('bg-primary/15 cursor-move');
+        setDragCaptureClass('bg-primary/10 cursor-move');
         setDraggedItem({ container: whichContainer, index: index });
     };
 
@@ -229,9 +229,6 @@ const DraggableTodo = () => {
                 handleOnDrop={handleOnDrop}
                 handleDelete={handleDelete}
             />
-            <p className="text-muted-foreground">
-                Click and hold on any todo to move it to your desired container
-            </p>
         </div>
     );
 };

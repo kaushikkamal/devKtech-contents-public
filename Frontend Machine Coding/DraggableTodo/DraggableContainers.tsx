@@ -1,17 +1,10 @@
 import { FormEvent } from 'react';
-import { Trash2 } from 'lucide-react';
 
+import EachTodo from './EachTodo';
 import { ITodo } from './DraggableTodo';
-import { Button } from '@/components/ui/button';
-import {
-    Card,
-    CardContent,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import DraggableContainerEnum from './DraggableContainerEnum';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 interface IProps {
     pendingTasks: ITodo[];
@@ -61,46 +54,28 @@ const DraggableContainers = ({
                                                         index: number,
                                                     ) => {
                                                         return (
-                                                            <Card
-                                                                key={index}
-                                                                className="p-4 flex items-center justify-between gap-4"
-                                                                draggable
-                                                                onDragStart={() => {
-                                                                    handleOnDragStart(
-                                                                        DraggableContainerEnum.PENDING_TASKS,
-                                                                        index,
-                                                                    );
-                                                                }}
-                                                                onDragOver={
+                                                            <EachTodo
+                                                                key={`${index}-${each.id}`}
+                                                                sourceContainer={
+                                                                    DraggableContainerEnum.PENDING_TASKS
+                                                                }
+                                                                taskIndex={
+                                                                    index
+                                                                }
+                                                                tasks={each}
+                                                                handleOnDragStart={
+                                                                    handleOnDragStart
+                                                                }
+                                                                handleOnDragOver={
                                                                     handleOnDragOver
                                                                 }
-                                                                onDrop={(e) => {
-                                                                    e.stopPropagation();
-                                                                    handleOnDrop(
-                                                                        DraggableContainerEnum.PENDING_TASKS,
-                                                                        index,
-                                                                    );
-                                                                }}
-                                                            >
-                                                                {each.text}
-                                                                <CardFooter className="p-0">
-                                                                    <Button
-                                                                        variant="outline"
-                                                                        className="p-2"
-                                                                        onClick={(
-                                                                            e: any,
-                                                                        ) => {
-                                                                            e.stopPropagation();
-                                                                            handleDelete(
-                                                                                DraggableContainerEnum.PENDING_TASKS,
-                                                                                index,
-                                                                            );
-                                                                        }}
-                                                                    >
-                                                                        <Trash2 />
-                                                                    </Button>
-                                                                </CardFooter>
-                                                            </Card>
+                                                                handleOnDrop={
+                                                                    handleOnDrop
+                                                                }
+                                                                handleDelete={
+                                                                    handleDelete
+                                                                }
+                                                            />
                                                         );
                                                     },
                                                 )
@@ -116,46 +91,28 @@ const DraggableContainers = ({
                                                         index: number,
                                                     ) => {
                                                         return (
-                                                            <Card
-                                                                key={index}
-                                                                className="p-4 flex items-center justify-between gap-4"
-                                                                draggable
-                                                                onDragStart={() => {
-                                                                    handleOnDragStart(
-                                                                        DraggableContainerEnum.INPROGRESS_TASKS,
-                                                                        index,
-                                                                    );
-                                                                }}
-                                                                onDragOver={
+                                                            <EachTodo
+                                                                key={`${index}-${each.id}`}
+                                                                sourceContainer={
+                                                                    DraggableContainerEnum.INPROGRESS_TASKS
+                                                                }
+                                                                taskIndex={
+                                                                    index
+                                                                }
+                                                                tasks={each}
+                                                                handleOnDragStart={
+                                                                    handleOnDragStart
+                                                                }
+                                                                handleOnDragOver={
                                                                     handleOnDragOver
                                                                 }
-                                                                onDrop={(e) => {
-                                                                    e.stopPropagation();
-                                                                    handleOnDrop(
-                                                                        DraggableContainerEnum.INPROGRESS_TASKS,
-                                                                        index,
-                                                                    );
-                                                                }}
-                                                            >
-                                                                {each.text}
-                                                                <CardFooter className="p-0">
-                                                                    <Button
-                                                                        variant="outline"
-                                                                        className="p-2"
-                                                                        onClick={(
-                                                                            e: any,
-                                                                        ) => {
-                                                                            e.stopPropagation();
-                                                                            handleDelete(
-                                                                                DraggableContainerEnum.INPROGRESS_TASKS,
-                                                                                index,
-                                                                            );
-                                                                        }}
-                                                                    >
-                                                                        <Trash2 />
-                                                                    </Button>
-                                                                </CardFooter>
-                                                            </Card>
+                                                                handleOnDrop={
+                                                                    handleOnDrop
+                                                                }
+                                                                handleDelete={
+                                                                    handleDelete
+                                                                }
+                                                            />
                                                         );
                                                     },
                                                 )
@@ -171,46 +128,28 @@ const DraggableContainers = ({
                                                         index: number,
                                                     ) => {
                                                         return (
-                                                            <Card
-                                                                key={index}
-                                                                className="p-4 flex items-center justify-between gap-4"
-                                                                draggable
-                                                                onDragStart={() => {
-                                                                    handleOnDragStart(
-                                                                        DraggableContainerEnum.COMPLETED_TASKS,
-                                                                        index,
-                                                                    );
-                                                                }}
-                                                                onDragOver={
+                                                            <EachTodo
+                                                                key={`${index}-${each.id}`}
+                                                                sourceContainer={
+                                                                    DraggableContainerEnum.COMPLETED_TASKS
+                                                                }
+                                                                taskIndex={
+                                                                    index
+                                                                }
+                                                                tasks={each}
+                                                                handleOnDragStart={
+                                                                    handleOnDragStart
+                                                                }
+                                                                handleOnDragOver={
                                                                     handleOnDragOver
                                                                 }
-                                                                onDrop={(e) => {
-                                                                    e.stopPropagation();
-                                                                    handleOnDrop(
-                                                                        DraggableContainerEnum.COMPLETED_TASKS,
-                                                                        index,
-                                                                    );
-                                                                }}
-                                                            >
-                                                                {each.text}
-                                                                <CardFooter className="p-0">
-                                                                    <Button
-                                                                        variant="outline"
-                                                                        className="p-2"
-                                                                        onClick={(
-                                                                            e: any,
-                                                                        ) => {
-                                                                            e.stopPropagation();
-                                                                            handleDelete(
-                                                                                DraggableContainerEnum.COMPLETED_TASKS,
-                                                                                index,
-                                                                            );
-                                                                        }}
-                                                                    >
-                                                                        <Trash2 />
-                                                                    </Button>
-                                                                </CardFooter>
-                                                            </Card>
+                                                                handleOnDrop={
+                                                                    handleOnDrop
+                                                                }
+                                                                handleDelete={
+                                                                    handleDelete
+                                                                }
+                                                            />
                                                         );
                                                     },
                                                 )
