@@ -1,12 +1,12 @@
-# devKtech
+# devKtech | Gateway to Excellence
 
 <p align="center">
   <img src="assets/logo.png" width="180" height="180" alt='devktech logo'>
 </p>
 
-devKtech.in is a personal platform where I share technical content and articles/solutions. I strive to provide useful and relevant information based on my experience and research. Please note that the content may not always be perfect or 100% accurate, here I am trying to document my knowledge in such a way that it helps other people. Technology is ever-evolving, and I am continuously learning along the way. Use the resources here as a guide, but I encourage you to explore further and verify details independently for your specific needs.
+**devKtech** / development of knowledge on technology, is a personal platform where we share technical content and articles / solutions. We strive to provide useful and relevant information based on our experience and research. Please note that the content may not always be perfect or 100% accurate, here we are trying to document our knowledge in such a way that it helps other people. Technology is ever-evolving, and we are continuously learning along the way. Use the resources here as a guide, but we encourage you to explore further and verify details independently for your specific needs.
 
-This repository contains all resources presented in [devktech.in](https://www.devktech.in)
+This repository contains all resources that are available on [devktech.in](https://www.devktech.in)
 
 ## Frontend Machine Coding
 
