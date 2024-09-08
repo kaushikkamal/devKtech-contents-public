@@ -11,6 +11,7 @@ This repository contains all resources that are available on [devktech.in](https
 ## Frontend Machine Coding
 
 -   [Accordion](https://devktech.in/frontend-machine-coding/accordion)
+-   [Bread Crumbs](https://devktech.in/frontend-machine-coding/bread-crumbs)
 -   [Draggable Todo](https://devktech.in/frontend-machine-coding/draggable-todo)
 -   [File Explorer](https://devktech.in/frontend-machine-coding/file-explorer)
 -   [Infinite Scroll](https://devktech.in/frontend-machine-coding/infinite-scroll)
