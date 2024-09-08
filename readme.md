@@ -19,6 +19,7 @@ This repository contains all resources that are available on [devktech.in](https
 -   [Password Generator](https://devktech.in/frontend-machine-coding/password-generator)
 -   [Progress Bar](https://devktech.in/frontend-machine-coding/progress-bar)
 -   [Star Rating](https://devktech.in/frontend-machine-coding/star-rating)
+-   [Stepper](https://devktech.in/frontend-machine-coding/stepper)
 -   [Stop Watch](https://devktech.in/frontend-machine-coding/stop-watch)
 -   [Tab Layout](https://devktech.in/frontend-machine-coding/tab-layout)
 -   [Traffic Light](https://devktech.in/frontend-machine-coding/traffic-light)
